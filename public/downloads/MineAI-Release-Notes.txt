@@ -1,0 +1,28 @@
+=====================================================
+MineAI — Release v1.0.0 (Production Candidate)
+Developer: Siva Bala Subramaniam P
+Contact: sivabala.piramuthu@gmail.com | +91 8870388517
+Portfolio: https://sivabala-portfolio.web.app
+=====================================================
+
+TARGET PLATFORMS:
+- Android: MineAI-v1.0.0-release.apk
+- Windows Desktop: MineAI-Desktop-Windows-v1.0.0.exe
+- macOS Desktop: MineAI-Desktop-macOS-v1.0.0.zip
+- Backend: Node.js 18+ Express Microservices
+- Admin: Flutter Web & Desktop Control Center
+
+CORE HIGHLIGHTS:
+1. AI Voice & Speech Task Extraction: Real-time speech transcription to SQLite with Gemini 2.5 Flash entity parsing.
+2. Parallel Price Comparison Scraper: Amazon, Flipkart, Meesho real-time price and deal difference calculations.
+3. Geo-Bound City News: Strict city boundary filtering for 8 major Indian cities with editorial photo extraction.
+4. AI Email Assistant: Professional tone formulation and direct SMTP dispatch.
+5. Biometric Private Vault: Client-side AES-256 encrypted storage for sensitive keys and credentials.
+6. HLS Video OTT Player: Adaptive multi-bitrate streaming with gesture seeking and variable playback speeds.
+7. Admin Dashboard: Real-time user metrics, support ticket resolution, and system health.
+
+REVIEWER / EVALUATOR INSTRUCTIONS:
+- Android: Transfer .apk to Android device or emulator. Enable 'Install Unknown Apps' under Settings > Security.
+- Windows: Run the setup executable or unzip portable build.
+- macOS: Unzip and drag to Applications. If Gatekeeper prompts, right-click and select 'Open'.
+=====================================================
