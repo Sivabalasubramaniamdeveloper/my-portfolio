@@ -6,9 +6,17 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   preview: {
-    allowedHosts: true,
+    allowedHosts: [
+      'my-portfolio-production-02c6.up.railway.app',
+      '.up.railway.app',
+      '.railway.app',
+    ],
   },
   server: {
-    allowedHosts: true,
+    allowedHosts: [
+      'my-portfolio-production-02c6.up.railway.app',
+      '.up.railway.app',
+      '.railway.app',
+    ],
   },
 })
