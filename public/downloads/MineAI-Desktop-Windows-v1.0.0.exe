@@ -1,3 +1,0 @@
-MineAI Windows Desktop Application Setup v1.0.0
-Architecture: Windows x64 (MSVC / InnoSetup)
-Replace this binary with your compiled 'flutter build windows --release' bundle output.

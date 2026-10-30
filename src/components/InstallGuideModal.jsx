@@ -21,6 +21,7 @@ import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import DownloadIcon from '@mui/icons-material/Download';
 import { closeInstallGuide, openInstallGuide } from '../store/mineAiSlice';
+import { showToast } from '../store/portfolioSlice';
 import { portfolioData } from '../data/portfolioData';
 
 export default function InstallGuideModal() {
@@ -168,11 +169,17 @@ export default function InstallGuideModal() {
               variant="contained"
               color="secondary"
               startIcon={<DownloadIcon />}
-              href={downloads.exe.url}
-              download={downloads.exe.fileName}
+              onClick={() => {
+                dispatch(
+                  showToast({
+                    message: 'Desktop application (.exe) is ready for production and will be uploaded soon! Please test the official Android APK in the meantime.',
+                    severity: 'info',
+                  })
+                );
+              }}
               sx={{ fontWeight: 700 }}
             >
-              Download Windows Executable ({downloads.exe.size})
+              Windows Executable (Uploading Soon)
             </Button>
           </Box>
         )}

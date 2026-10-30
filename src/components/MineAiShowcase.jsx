@@ -54,6 +54,15 @@ export default function MineAiShowcase() {
     mineAi.features.find((f) => f.id === activeFeatureId) || mineAi.features[0];
 
   const handleDownload = (type, fileName, url) => {
+    if (type === 'exe') {
+      dispatch(
+        showToast({
+          message: 'Desktop application (.exe) is ready for production and will be uploaded soon! Please test the official Android APK in the meantime.',
+          severity: 'info',
+        })
+      );
+      return;
+    }
     dispatch(incrementDownload(type));
     dispatch(
       showToast({
@@ -353,7 +362,7 @@ export default function MineAiShowcase() {
                     }
                     sx={{ py: 1.5, fontWeight: 800, fontSize: '0.98rem' }}
                   >
-                    Download Windows Setup (.exe)
+                    Windows Setup (.exe) — Uploading Soon
                   </Button>
                   <Button
                     variant="text"
