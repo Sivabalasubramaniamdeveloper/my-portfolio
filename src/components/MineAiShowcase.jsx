@@ -564,10 +564,14 @@ export default function MineAiShowcase() {
 
           <Grid container spacing={2}>
             {mineAi.techStack.map((tech, index) => (
-              <Grid size={{ xs: 12, sm: 6, md: 2.4 }} key={index}>
+              <Grid size={{ xs: 6, sm: 4, md: 3, lg: 2 }} key={index}>
                 <Box
                   sx={{
                     p: 2,
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
                     borderRadius: 2.5,
                     backgroundColor:
                       theme.palette.mode === 'dark' ? 'rgba(15, 23, 42, 0.6)' : 'rgba(241, 245, 249, 0.7)',
@@ -575,10 +579,10 @@ export default function MineAiShowcase() {
                     textAlign: 'center',
                   }}
                 >
-                  <Typography variant="subtitle2" sx={{ fontWeight: 800, color: 'primary.main' }}>
+                  <Typography variant="subtitle2" sx={{ fontWeight: 800, color: 'primary.main', fontSize: '0.88rem' }}>
                     {tech.name}
                   </Typography>
-                  <Typography variant="caption" sx={{ color: 'text.secondary' }}>
+                  <Typography variant="caption" sx={{ color: 'text.secondary', fontSize: '0.74rem' }}>
                     {tech.category}
                   </Typography>
                 </Box>

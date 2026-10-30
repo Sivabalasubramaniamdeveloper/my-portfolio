@@ -1,20 +1,20 @@
 export const portfolioData = {
   developer: {
     name: "Siva Bala Subramaniam P",
-    title: "Senior Flutter & Cross-Platform Full-Stack Developer",
-    subtitle: "Specializing in Flutter (Mobile, Desktop, Web), Node.js Microservices, BLoC Architecture & Generative AI",
-    location: "Tirunelveli / Chennai, Tamil Nadu, India",
+    title: "Flutter & Cross-Platform Full-Stack Developer",
+    subtitle: "Specializing in Flutter (Mobile, Desktop, Web),React JS, Node.js, BLoC Architecture & Generative AI",
+    location: "Chennai, Tamil Nadu, India",
     phone: "+91 8870388517",
     email: "sivabala.piramuthu@gmail.com",
     linkedin: "https://www.linkedin.com/in/siva-bala-subramaniam-p-5a0b52283/",
-    github: "https://github.com/sivabala-dev",
+    github: "https://github.com/Sivabalasubramaniamdeveloper",
     summary:
-      "Flutter Developer with 3+ years of experience engineering high-performance cross-platform mobile (Android/iOS), web, and desktop (macOS/Windows) applications using Flutter and Dart. Experienced in developing production-ready apps published on Google Play Store and Apple App Store. Skilled in building responsive UIs, integrating RESTful APIs, Firebase/Supabase services, and implementing state management using BLoC/Cubit and Redux. Recently architected MineAI - an end-to-end personal AI productivity hub with voice task extraction, multi-store price scraper, biometric encrypted vault, and Node.js microservices. Extensive experience in AI integrations (Gemini, Flowise, OpenAI), offline-first SQLite architectures, CI/CD automation, and desktop productivity software.",
+      "Flutter Developer with 3+ years of experience engineering high-performance cross-platform mobile (Android/iOS), web, and desktop (macOS/Windows) applications using Flutter and Dart. Experienced in developing production-ready apps published on Google Play Store and Apple App Store. Skilled in building responsive UIs, integrating RESTful APIs, Firebase/Supabase services, and implementing state management using BLoC/Cubit. Recently architected MineAI - an end-to-end personal AI productivity hub with voice task extraction, multi-store price scraper, biometric encrypted vault, and Node.js microservices. Extensive experience in AI integrations (Gemini, Flowise, OpenAI), offline-first SQLite architectures, CI/CD automation, and desktop productivity software.",
     stats: [
       { label: "Years Experience", value: "3+" },
       { label: "Published Store Apps", value: "5+" },
       { label: "Platforms Supported", value: "Mobile & Desktop" },
-      { label: "Core Stack", value: "Flutter • Node.js • AI" },
+      { label: "Core Stack", value: "Flutter • Node.js • React JS •  AI" },
     ],
     aboutHighlights: [
       {
@@ -32,6 +32,10 @@ export const portfolioData = {
       {
         title: "Generative AI Integration",
         desc: "Deep hands-on experience integrating Google Gemini 2.5 Flash, Flowise, LangChain RAG vector retrieval, and speech STT/TTS loops.",
+      },
+      {
+        title: "ReactJS & Modern Web Engineering",
+        desc: "Extensive hands-on experience building responsive web applications and portals with React.js, Redux Toolkit, Material UI, and REST API integration.",
       },
     ],
   },
@@ -73,6 +77,8 @@ export const portfolioData = {
       { name: "Flutter 3.29+", category: "Cross-Platform Framework" },
       { name: "Dart 3.8+", category: "Programming Language" },
       { name: "BLoC / Cubit", category: "Predictable State Management" },
+      { name: "ReactJS & Redux Toolkit", category: "Web Frontend & State Slice" },
+      { name: "Firebase Suite", category: "Cloud Auth, Firestore & FCM" },
       { name: "Node.js & Express 5.2", category: "Microservice REST APIs" },
       { name: "Supabase PostgreSQL", category: "Cloud Database & Auth" },
       { name: "SQLite (sqflite)", category: "Offline-First Local DB" },
@@ -292,7 +298,7 @@ export const portfolioData = {
       icon: "MenuBook",
       status: "Published",
       appStoreUrl: "https://www.apple.com/app-store/",
-      hasAppStore: true,
+      hasAppStore: false,
     },
     {
       id: "pollution-monitor",
@@ -306,20 +312,20 @@ export const portfolioData = {
       icon: "Park",
       status: "Beta Release",
       playStoreUrl: "https://play.google.com/store/search?q=Pollution+Monitoring&c=apps",
-      hasPlayStore: true,
+      hasPlayStore: false,
     },
-    {
-      id: "jarvis-ai",
-      name: "Jarvis AI — Conversational Voice & RAG Agent",
-      platform: "Render Cloud & Flutter Client",
-      role: "AI & Full-Stack Developer",
-      tech: ["Flowise", "LangChain", "RAG Vector Store", "OpenAI API", "Flutter", "STT/TTS"],
-      summary:
-        "Created an AI-powered conversational assistant integrating Flowise, LangChain, and RAG-enabled PDF knowledge retrieval. Added bidirectional voice loop (speech-to-text and text-to-speech) with multi-turn memory buffers.",
-      metrics: "Vector Semantic Search • Buffer Memory • Hands-Free Voice UI",
-      icon: "SmartToy",
-      status: "Active Deployment",
-    },
+    // {
+    //   id: "jarvis-ai",
+    //   name: "Jarvis AI — Conversational Voice & RAG Agent",
+    //   platform: "Render Cloud & Flutter Client",
+    //   role: "AI & Full-Stack Developer",
+    //   tech: ["Flowise", "LangChain", "RAG Vector Store", "OpenAI API", "Flutter", "STT/TTS"],
+    //   summary:
+    //     "Created an AI-powered conversational assistant integrating Flowise, LangChain, and RAG-enabled PDF knowledge retrieval. Added bidirectional voice loop (speech-to-text and text-to-speech) with multi-turn memory buffers.",
+    //   metrics: "Vector Semantic Search • Buffer Memory • Hands-Free Voice UI",
+    //   icon: "SmartToy",
+    //   status: "Active Deployment",
+    // },
     {
       id: "currency-pick",
       name: "currency_pick — Open Source Flutter Package",
@@ -352,14 +358,15 @@ export const portfolioData = {
     },
     {
       company: "Datayaan Solutions Pvt. Ltd.",
-      role: "Flutter Developer",
+      role: "Flutter & React.js Developer",
       period: "Jul 2023 – Nov 2025",
       location: "Tirunelveli, India",
       highlights: [
         "Developed high-performance Flutter apps with scalable clean architecture and responsive UI across Android, iOS, and desktop.",
+        "Built responsive web applications and administrative dashboards using React.js, Redux Toolkit, and Material UI with RESTful API integration.",
         "Built complex UIs using custom widgets, FormBuilder, and Figma-based responsive design tokens.",
         "Integrated RESTful APIs and Firebase services (Auth, Firestore, Storage, Messaging, App Distribution) for secure real-time features.",
-        "Used BLoC/Cubit extensively for modular structure, predictable state transitions, and maintainability.",
+        "Used BLoC/Cubit and Redux slice state management extensively for modular structure, predictable state transitions, and maintainability.",
         "Implemented offline-first architecture using Sqflite with local caching, synchronization, and full CRUD operations.",
         "Deployed applications to Google Play Store and TestFlight with automated CI/CD pipelines, versioning, and app signing.",
       ],
@@ -386,13 +393,14 @@ export const portfolioData = {
   // Modern Professional Skills Structure (No percentage bars)
   skillCategories: [
     {
-      category: "Cross-Platform & Client Engineering",
-      description: "High-performance production client engineering for Android, iOS, Windows, and macOS.",
+      category: "Cross-Platform & Web Engineering",
+      description: "High-performance production client engineering for Android, iOS, Windows, macOS, and Web.",
       skills: [
         { name: "Flutter 3.29+", highlight: "Primary Framework" },
         { name: "Dart 3.8+", highlight: "Primary Language" },
+        { name: "React.js (ReactJS)", highlight: "Frontend Web Engineering" },
         { name: "Desktop (Windows & macOS)", highlight: "Native FFI & Multi-Window" },
-        { name: "Responsive UI Architecture", highlight: "Adaptive Layouts" },
+        { name: "Responsive UI Architecture", highlight: "Adaptive Layouts & MUI" },
         { name: "Android & iOS Native Tooling", highlight: "Gradle, CocoaPods" },
       ],
     },
@@ -401,9 +409,9 @@ export const portfolioData = {
       description: "Modular, decoupled application design patterns ensuring high testability and predictable states.",
       skills: [
         { name: "BLoC & Cubit", highlight: "Enterprise Standard" },
+        { name: "Redux & Redux Toolkit", highlight: "Slice State Management" },
         { name: "Clean Architecture", highlight: "Domain-Driven" },
         { name: "Dependency Injection", highlight: "GetIt, Injectable" },
-        { name: "Redux & Redux Toolkit", highlight: "Slice Pattern" },
         { name: "Repository Pattern", highlight: "Data Abstraction" },
       ],
     },
