@@ -39,7 +39,7 @@ export default function ResumeSection() {
     );
 
     const link = document.createElement('a');
-    link.href = '/downloads/Siva_Bala_Subramaniam_P_Resume.pdf';
+    link.href = mineAi.downloads.resume.url;
     link.download = 'Siva_Bala_Subramaniam_P_Resume.pdf';
     document.body.appendChild(link);
     link.click();

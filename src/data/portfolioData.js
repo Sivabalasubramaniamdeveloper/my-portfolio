@@ -1,3 +1,11 @@
+export const getAssetUrl = (path) => {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://')) return path;
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${base}${cleanPath}`;
+};
+
 export const portfolioData = {
   developer: {
     name: "Siva Bala Subramaniam P",
@@ -52,7 +60,7 @@ export const portfolioData = {
         version: "v1.0.0 (Universal)",
         size: "34.8 MB",
         fileName: "MineAI-v1.0.0-release.apk",
-        url: "/downloads/MineAI-v1.0.0-release.apk",
+        url: getAssetUrl("/downloads/MineAI-v1.0.0-release.apk"),
         requirements: "Android 8.0+ (Oreo to Android 15)",
         highlight: "Most Popular",
       },
@@ -61,7 +69,7 @@ export const portfolioData = {
         version: "v1.0.0 (x64)",
         size: "42.5 MB",
         fileName: "MineAI-Desktop-Windows-v1.0.0.exe",
-        url: "/downloads/MineAI-Desktop-Windows-v1.0.0.exe",
+        url: getAssetUrl("/downloads/MineAI-Desktop-Windows-v1.0.0.exe"),
         requirements: "Windows 10 / 11 (64-bit)",
         highlight: "Desktop Edition",
       },
@@ -70,7 +78,7 @@ export const portfolioData = {
         version: "Updated Edition",
         size: "19.2 KB",
         fileName: "Siva_Bala_Subramaniam_P_Resume.pdf",
-        url: "/downloads/Siva_Bala_Subramaniam_P_Resume.pdf",
+        url: getAssetUrl("/downloads/Siva_Bala_Subramaniam_P_Resume.pdf"),
       },
     },
     techStack: [
@@ -254,7 +262,10 @@ export const portfolioData = {
         keyMetrics: ["Desktop Windows/macOS", "Real-Time Metrics", "Cluster Telemetry"],
         isDesktop: true,
       },
-    ],
+    ].map((f) => ({
+      ...f,
+      images: (f.images || []).map((img) => getAssetUrl(img)),
+    })),
   },
 
   otherProjects: [
